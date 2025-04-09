@@ -1,67 +1,29 @@
 # E-Commerce Website
 
-A Ecommerce Website made with React.js Framework.
-
+An E-Commerce Website designed with the **React.js** framework, showcasing real-time products.
 
 ## Demo
 
-https://reactjs-ecommerce-app.vercel.app/
+View the live demo of the project here:
+
+[Live Demo](https://muzamil-ahmad-dev.github.io/skyride/)
 
 ## Features
 
-- Easy to integrate with Backend
-- Fully Responsive
-
+- **Real-time product data** - Integrates with a real-time backend to fetch live product listings.
+- Fully Responsive - A smooth, mobile-first experience across all devices.
+- **User-friendly UI/UX design** - Easy navigation and seamless shopping experience.
+- **Product management** - View detailed product information, including images, descriptions, and prices.
 
 ## Screenshots
 
 ![App Screenshot](https://i.ibb.co/fQ293tm/image.png)
 
-
-
 ## Run Locally
 
-Clone the project
+To run this project locally on your system, follow these steps:
+
+### 1. Clone the project
 
 ```bash
-  git clone https://github.com/ssahibsingh/React_E-Commerce
-```
-
-Go to the project directory
-
-```bash
-  cd React_E-Commerce
-```
-
-Install dependencies
-
-```bash
-  npm install
-```
-
-Start the server
-
-```bash
-  npm start
-```
-
-
-
-## Tech Stack
-
-* [React](https://reactjs.org/)
-* [Redux](https://redux.js.org/)
-* [Bootstrap](https://getbootstrap.com/)
-* [Fake Store API](https://fakestoreapi.com/)
-
-## Contributing
-
-Contributions are always welcome!
-Just raise an issue, we will discuss it.
-
-
-## Feedback
-
-If you have any feedback, please reach out to me [here](https://ssahibsingh.github.io/#contact)
-
-
+  git clone https://github.com/muzamil-ahmad-dev/skyride.git
