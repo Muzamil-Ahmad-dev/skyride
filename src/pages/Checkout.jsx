@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Footer, Navbar } from "../components";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+
 const Checkout = () => {
   const state = useSelector((state) => state.handleCart);
+
+  const [paymentMethod, setPaymentMethod] = useState("");
+  const [coupon, setCoupon] = useState("");
+  const [isValidCoupon, setIsValidCoupon] = useState(true);
 
   const EmptyCart = () => {
     return (
@@ -31,6 +36,16 @@ const Checkout = () => {
     state.map((item) => {
       return (totalItems += item.qty);
     });
+
+    const applyCoupon = () => {
+      if (coupon === "DISCOUNT10") {
+        setIsValidCoupon(true);
+        subtotal = subtotal * 0.9; // Apply a 10% discount
+      } else {
+        setIsValidCoupon(false);
+      }
+    };
+
     return (
       <>
         <div className="container py-5">
@@ -195,81 +210,63 @@ const Checkout = () => {
                     <hr className="my-4" />
 
                     <h4 className="mb-3">Payment</h4>
-
-                    <div className="row gy-3">
-                      <div className="col-md-6">
-                        <label for="cc-name" className="form-label">
-                          Name on card
-                        </label>
+                    {/* Payment Method Selection */}
+                    <div className="form-group">
+                      <label>Select Payment Method</label>
+                      <div className="form-check">
                         <input
-                          type="text"
-                          className="form-control"
-                          id="cc-name"
-                          placeholder=""
-                          required
+                          type="radio"
+                          className="form-check-input"
+                          id="payment-credit-card"
+                          name="payment-method"
+                          value="credit-card"
+                          onChange={(e) => setPaymentMethod(e.target.value)}
                         />
-                        <small className="text-muted">
-                          Full name as displayed on card
-                        </small>
-                        <div className="invalid-feedback">
-                          Name on card is required
-                        </div>
-                      </div>
-
-                      <div className="col-md-6">
-                        <label for="cc-number" className="form-label">
-                          Credit card number
+                        <label className="form-check-label" htmlFor="payment-credit-card">
+                          Credit Card
                         </label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          id="cc-number"
-                          placeholder=""
-                          required
-                        />
-                        <div className="invalid-feedback">
-                          Credit card number is required
-                        </div>
                       </div>
-
-                      <div className="col-md-3">
-                        <label for="cc-expiration" className="form-label">
-                          Expiration
+                      <div className="form-check">
+                        <input
+                          type="radio"
+                          className="form-check-input"
+                          id="payment-paypal"
+                          name="payment-method"
+                          value="paypal"
+                          onChange={(e) => setPaymentMethod(e.target.value)}
+                        />
+                        <label className="form-check-label" htmlFor="payment-paypal">
+                          PayPal
                         </label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          id="cc-expiration"
-                          placeholder=""
-                          required
-                        />
-                        <div className="invalid-feedback">
-                          Expiration date required
-                        </div>
                       </div>
+                      {/* Add more payment methods here */}
+                    </div>
 
-                      <div className="col-md-3">
-                        <label for="cc-cvv" className="form-label">
-                          CVV
-                        </label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          id="cc-cvv"
-                          placeholder=""
-                          required
-                        />
-                        <div className="invalid-feedback">
-                          Security code required
-                        </div>
-                      </div>
+                    {/* Coupon Code */}
+                    <div className="form-group mt-3">
+                      <label>Coupon Code</label>
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="coupon-code"
+                        placeholder="Enter coupon code"
+                        value={coupon}
+                        onChange={(e) => setCoupon(e.target.value)}
+                      />
+                      <button type="button" className="btn btn-primary mt-2" onClick={applyCoupon}>
+                        Apply Coupon
+                      </button>
+                      {!isValidCoupon && (
+                        <div className="text-danger mt-2">Invalid Coupon Code!</div>
+                      )}
                     </div>
 
                     <hr className="my-4" />
 
                     <button
-                      className="w-100 btn btn-primary "
-                      type="submit" disabled
+                      className="w-100 btn btn-primary"
+                      type="submit"
+                      disabled={!paymentMethod}
                     >
                       Continue to checkout
                     </button>
@@ -282,6 +279,7 @@ const Checkout = () => {
       </>
     );
   };
+
   return (
     <>
       <Navbar />
