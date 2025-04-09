@@ -10,12 +10,11 @@ const productData = [
     id: 1,
     name: "Luxury Boat",
     category: "Boat",
-    image: "/assets/image/boat.jpg", // Updated path for main boat image
     price: "$35,500", // Updated price
     description: "Experience the ocean in style.",
     details: "Made for ocean adventures. GPS, radar, luxury cabin and full service warranty included.",
     interiorImages: [
-      "/assets/image/boat1.jpg", // Updated interior image
+      "/public/assets/image/boat1.jpg", // Updated interior image
       "/assets/image/boat2.jpg", // Updated interior image
       "/assets/image/boat3.jpg", // Updated interior image
       "/assets/image/boat4.jpg", // Updated interior image
