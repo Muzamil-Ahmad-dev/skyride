@@ -10,22 +10,23 @@ const productData = [
     id: 1,
     name: "Luxury Boat",
     category: "Boat",
+    image: "https://muzamil-ahmad-dev.github.io/skyride/assets/image/boat1.jpg", // Updated path for main boat image
     price: "$35,500", // Updated price
     description: "Experience the ocean in style.",
     details: "Made for ocean adventures. GPS, radar, luxury cabin and full service warranty included.",
     interiorImages: [
-      "/public/assets/image/boat1.jpg", // Updated interior image
-      "/assets/image/boat2.jpg", // Updated interior image
-      "/assets/image/boat3.jpg", // Updated interior image
-      "/assets/image/boat4.jpg", // Updated interior image
-      "/assets/image/boat5.jpg"  // Updated interior image
+      "https://muzamil-ahmad-dev.github.io/skyride/assets/image/boat1.jpg", // Updated interior image
+      "https://muzamil-ahmad-dev.github.io/skyride/assets/image/boat2.jpg", // Updated interior image
+      "https://muzamil-ahmad-dev.github.io/skyride/assets/image/boat3.jpg", // Updated interior image
+      "https://muzamil-ahmad-dev.github.io/skyride/assets/image/boat4.jpg", // Updated interior image
+      "https://muzamil-ahmad-dev.github.io/skyride/assets/image/boat5.jpg"  // Updated interior image
     ],
   },
   {
     id: 2,
     name: "Electric Scooter",
     category: "Electric Scooter",
-    image: "/assets/image/bike1.jpg", // Updated path
+    image: "https://muzamil-ahmad-dev.github.io/skyride/assets/image/bike1.jpg", // Updated path
     price: "$1,200",
     description: "Eco-friendly city commuting.",
     details: "Top speed 30 km/h. Long-lasting battery. Lightweight frame. Great for urban rides.",
@@ -34,15 +35,15 @@ const productData = [
     id: 3,
     name: "Mobile Home",
     category: "Mobile Home",
-    image: "/assets/image/home.jpg", // Updated path
+    image: "https://muzamil-ahmad-dev.github.io/skyride/assets/image/home.jpg", // Updated path
     interiorImages: [
-      "/assets/image/inside1.jpg",
-      "/assets/image/inside2.jpg",
-      "/assets/image/inside3.jpg",
-      "/assets/image/inside4.jpg",
-      "/assets/image/inside5.jpg",
-      "/assets/image/inside6.jpg",
-      "/assets/image/inside7.jpg",
+      "https://muzamil-ahmad-dev.github.io/skyride/assets/image/inside1.jpg",
+      "https://muzamil-ahmad-dev.github.io/skyride/assets/image/inside2.jpg",
+      "https://muzamil-ahmad-dev.github.io/skyride/assets/image/inside3.jpg",
+      "https://muzamil-ahmad-dev.github.io/skyride/assets/image/inside4.jpg",
+      "https://muzamil-ahmad-dev.github.io/skyride/assets/image/inside5.jpg",
+      "https://muzamil-ahmad-dev.github.io/skyride/assets/image/inside6.jpg",
+      "https://muzamil-ahmad-dev.github.io/skyride/assets/image/inside7.jpg",
     ],
     price: "$100,000", // Updated price (original $80,000 + $20,000)
     description: "Home on the move.",
@@ -52,7 +53,7 @@ const productData = [
     id: 4,
     name: "Private Helicopter",
     category: "Helicopter",
-    image: "/assets/image/helicopter.jpg", // Updated path
+    image: "https://muzamil-ahmad-dev.github.io/skyride/assets/image/helicopter.jpg", // Updated path
     price: "$515,000", // Updated price (original $500,000 + $15,000)
     description: "Fly anywhere in style.",
     details: "Seats 4, autopilot system, luxury leather seats, and advanced navigation.",
@@ -61,7 +62,7 @@ const productData = [
     id: 5,
     name: "Luxury Car",
     category: "Car",
-    image: "/assets/image/car1.jpg", // Updated path
+    image: "https://muzamil-ahmad-dev.github.io/skyride/assets/image/car1.jpg", // Updated path
     price: "$60,000",
     description: "Comfort and performance.",
     details: "V8 engine, automatic transmission, leather interior, sunroof.",
@@ -70,7 +71,7 @@ const productData = [
     id: 6,
     name: "Security Gun",
     category: "Gun",
-    image: "/assets/image/gun.jpg", // Updated path
+    image: "https://muzamil-ahmad-dev.github.io/skyride/assets/image/gun.jpg", // Updated path
     price: "$3,000",
     description: "Licensed for security only.",
     details: "Legal firearm with full documentation. Only sold to authorized security personnel.",
@@ -79,15 +80,15 @@ const productData = [
     id: 7,
     name: "Mobile Home Deluxe",
     category: "Mobile Home",
-    image: "/assets/image/home1.jpg", // Updated path
+    image: "https://muzamil-ahmad-dev.github.io/skyride/assets/image/home1.jpg", // Updated path
     interiorImages: [
-      "/assets/image/inside1.jpg",
-      "/assets/image/inside2.jpg",
-      "/assets/image/inside3.jpg",
-      "/assets/image/inside4.jpg",
-      "/assets/image/inside5.jpg",
-      "/assets/image/inside6.jpg",
-      "/assets/image/inside7.jpg",
+      "https://muzamil-ahmad-dev.github.io/skyride/assets/image/inside1.jpg",
+      "https://muzamil-ahmad-dev.github.io/skyride/assets/image/inside2.jpg",
+      "https://muzamil-ahmad-dev.github.io/skyride/assets/image/inside3.jpg",
+      "https://muzamil-ahmad-dev.github.io/skyride/assets/image/inside4.jpg",
+      "https://muzamil-ahmad-dev.github.io/skyride/assets/image/inside5.jpg",
+      "https://muzamil-ahmad-dev.github.io/skyride/assets/image/inside6.jpg",
+      "https://muzamil-ahmad-dev.github.io/skyride/assets/image/inside7.jpg",
     ],
     price: "$90,000",
     description: "Deluxe mobile home with modern style.",
@@ -97,15 +98,15 @@ const productData = [
     id: 8,
     name: "Mobile Home Compact",
     category: "Mobile Home",
-    image: "/assets/image/home2.jpg", // Updated path
+    image: "https://muzamil-ahmad-dev.github.io/skyride/assets/image/home2.jpg", // Updated path
     interiorImages: [
-      "/assets/image/inside1.jpg",
-      "/assets/image/inside2.jpg",
-      "/assets/image/inside3.jpg",
-      "/assets/image/inside4.jpg",
-      "/assets/image/inside5.jpg",
-      "/assets/image/inside6.jpg",
-      "/assets/image/inside7.jpg",
+      "https://muzamil-ahmad-dev.github.io/skyride/assets/image/inside1.jpg",
+      "https://muzamil-ahmad-dev.github.io/skyride/assets/image/inside2.jpg",
+      "https://muzamil-ahmad-dev.github.io/skyride/assets/image/inside3.jpg",
+      "https://muzamil-ahmad-dev.github.io/skyride/assets/image/inside4.jpg",
+      "https://muzamil-ahmad-dev.github.io/skyride/assets/image/inside5.jpg",
+      "https://muzamil-ahmad-dev.github.io/skyride/assets/image/inside6.jpg",
+      "https://muzamil-ahmad-dev.github.io/skyride/assets/image/inside7.jpg",
     ],
     price: "$70,000",
     description: "Compact, efficient, and lightweight.",
@@ -115,15 +116,15 @@ const productData = [
     id: 9,
     name: "Mobile Home Premium",
     category: "Mobile Home",
-    image: "/assets/image/home3.jpg", // Updated path
+    image: "https://muzamil-ahmad-dev.github.io/skyride/assets/image/home3.jpg", // Updated path
     interiorImages: [
-      "/assets/image/inside1.jpg",
-      "/assets/image/inside2.jpg",
-      "/assets/image/inside3.jpg",
-      "/assets/image/inside4.jpg",
-      "/assets/image/inside5.jpg",
-      "/assets/image/inside6.jpg",
-      "/assets/image/inside7.jpg",
+      "https://muzamil-ahmad-dev.github.io/skyride/assets/image/inside1.jpg",
+      "https://muzamil-ahmad-dev.github.io/skyride/assets/image/inside2.jpg",
+      "https://muzamil-ahmad-dev.github.io/skyride/assets/image/inside3.jpg",
+      "https://muzamil-ahmad-dev.github.io/skyride/assets/image/inside4.jpg",
+      "https://muzamil-ahmad-dev.github.io/skyride/assets/image/inside5.jpg",
+      "https://muzamil-ahmad-dev.github.io/skyride/assets/image/inside6.jpg",
+      "https://muzamil-ahmad-dev.github.io/skyride/assets/image/inside7.jpg",
     ],
     price: "$95,000",
     description: "Luxury features with complete comfort.",
@@ -133,7 +134,7 @@ const productData = [
     id: 10,
     name: "Luxury Car",
     category: "Car",
-    image: "/assets/image/car2.jpg", // Updated path
+    image: "https://muzamil-ahmad-dev.github.io/skyride/assets/image/car2.jpg", // Updated path
     price: "$60,000",
     description: "Comfort and performance.",
     details: "V8 engine, automatic transmission, leather interior, sunroof.",
@@ -142,7 +143,7 @@ const productData = [
     id: 11,
     name: "Luxury Car",
     category: "Car",
-    image: "/assets/image/car3.jpg", // Updated path
+    image: "https://muzamil-ahmad-dev.github.io/skyride/assets/image/car3.jpg", // Updated path
     price: "$60,000",
     description: "Comfort and performance.",
     details: "V8 engine, automatic transmission, leather interior, sunroof.",
@@ -151,7 +152,7 @@ const productData = [
     id: 12,
     name: "Luxury Car",
     category: "Car",
-    image: "/assets/image/car4.jpg", // Updated path
+    image: "https://muzamil-ahmad-dev.github.io/skyride/assets/image/car4.jpg", // Updated path
     price: "$60,000",
     description: "Comfort and performance.",
     details: "V8 engine, automatic transmission, leather interior, sunroof.",
@@ -160,7 +161,7 @@ const productData = [
     id: 13,
     name: "Luxury Car",
     category: "Car",
-    image: "/assets/image/car5.jpg", // Updated path
+    image: "https://muzamil-ahmad-dev.github.io/skyride/assets/image/car5.jpg", // Updated path
     price: "$60,000",
     description: "Comfort and performance.",
     details: "V8 engine, automatic transmission, leather interior, sunroof.",
@@ -169,7 +170,7 @@ const productData = [
     id: 14,
     name: "Luxury Car",
     category: "Car",
-    image: "/assets/image/car6.jpg", // Updated path
+    image: "https://muzamil-ahmad-dev.github.io/skyride/assets/image/car6.jpg", // Updated path
     price: "$60,000",
     description: "Comfort and performance.",
     details: "V8 engine, automatic transmission, leather interior, sunroof.",
@@ -178,7 +179,7 @@ const productData = [
     id: 15,
     name: "Luxury Car",
     category: "Car",
-    image: "/assets/image/car7.jpg", // Updated path
+    image: "https://muzamil-ahmad-dev.github.io/skyride/assets/image/car7.jpg", // Updated path
     price: "$60,000",
     description: "Comfort and performance.",
     details: "V8 engine, automatic transmission, leather interior, sunroof.",
@@ -187,7 +188,7 @@ const productData = [
     id: 16,
     name: "Electric Scooter",
     category: "Electric Scooter",
-    image: "/assets/image/bike2.jpg", // Updated path
+    image: "https://muzamil-ahmad-dev.github.io/skyride/assets/image/bike2.jpg", // Updated path
     price: "$1,200",
     description: "Eco-friendly city commuting.",
     details: "Top speed 30 km/h. Long-lasting battery. Lightweight frame. Great for urban rides.",
@@ -196,7 +197,7 @@ const productData = [
     id: 17,
     name: "Electric Scooter",
     category: "Electric Scooter",
-    image: "/assets/image/bike3.jpg", // Updated path
+    image: "https://muzamil-ahmad-dev.github.io/skyride/assets/image/bike3.jpg", // Updated path
     price: "$1,200",
     description: "Eco-friendly city commuting.",
     details: "Top speed 30 km/h. Long-lasting battery. Lightweight frame. Great for urban rides.",
@@ -205,7 +206,7 @@ const productData = [
     id: 18,
     name: "Electric Scooter",
     category: "Electric Scooter",
-    image: "/assets/image/bike4.jpg", // Updated path
+    image: "https://muzamil-ahmad-dev.github.io/skyride/assets/image/bike4.jpg", // Updated path
     price: "$1,200",
     description: "Eco-friendly city commuting.",
     details: "Top speed 30 km/h. Long-lasting battery. Lightweight frame. Great for urban rides.",
@@ -214,7 +215,7 @@ const productData = [
     id: 19,
     name: "Electric Scooter",
     category: "Electric Scooter",
-    image: "/assets/image/bike5.jpg", // Updated path
+    image: "https://muzamil-ahmad-dev.github.io/skyride/assets/image/bike5.jpg", // Updated path
     price: "$1,200",
     description: "Eco-friendly city commuting.",
     details: "Top speed 30 km/h. Long-lasting battery. Lightweight frame. Great for urban rides.",
@@ -223,7 +224,7 @@ const productData = [
     id: 20,
     name: "Electric Scooter",
     category: "Electric Scooter",
-    image: "/assets/image/bike6.jpg", // Updated path
+    image: "https://muzamil-ahmad-dev.github.io/skyride/assets/image/bike6.jpg", // Updated path
     price: "$1,200",
     description: "Eco-friendly city commuting.",
     details: "Top speed 30 km/h. Long-lasting battery. Lightweight frame. Great for urban rides.",
@@ -232,7 +233,7 @@ const productData = [
     id: 21,
     name: "Electric Scooter",
     category: "Electric Scooter",
-    image: "/assets/image/bike7.jpg", // Updated path
+    image: "https://muzamil-ahmad-dev.github.io/skyride/assets/image/bike7.jpg", // Updated path
     price: "$1,200",
     description: "Eco-friendly city commuting.",
     details: "Top speed 30 km/h. Long-lasting battery. Lightweight frame. Great for urban rides.",
@@ -241,12 +242,12 @@ const productData = [
     id: 22,
     name: "Electric Scooter",
     category: "Electric Scooter",
-    image: "/assets/image/bike8.jpg", // Updated path
+    image: "https://muzamil-ahmad-dev.github.io/skyride/assets/image/bike8.jpg", // Updated path
     price: "$1,200",
     description: "Eco-friendly city commuting.",
     details: "Top speed 30 km/h. Long-lasting battery. Lightweight frame. Great for urban rides.",
   }
-];  
+];
 
 const categories = [
   "All",
